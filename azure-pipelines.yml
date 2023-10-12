@@ -1,13 +1,16 @@
-pr:
-  drafts: true
-  branches:
-    include:
-      - main
-      - master
-      - development
+# pr:
+#   drafts: true
+#   branches:
+#     include:
+#       - main
+#       - master
+#       - development
+
+# trigger:
+# - 'quality-assurance'
 
 trigger:
-- 'quality-assurance'
+  - '*'
 
 variables:
   buildConfiguration: 'Release'
